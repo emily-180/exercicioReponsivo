@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: #febe01;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap:30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap:30px;
+}
+
+.grid-container-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: left;
+    justify-items: left;
+    gap:10px;
+}
+
+.content{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-grid{
+    text-align: left;
+}
+
+.divs{
+    background-color: #111 ;
+    color: #b2b2b2;
+    padding: 20px ;
+    width: 350px;
+    text-align: left;
+    margin: 15px ;
+}
+
+button{
+    color: #000000;
+    background-color: #febe01;
+    border-radius: 4px  ;
+    height: 40px;
+    width: 70px;
+}
+
+.btnVerde{
+    color: #ffffff;
+    background-color: #92af64;
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+}
+
+#logotipo{
+    max-width: 100%;
+    max-height: 100%;
+    width: 80px;
+    border-radius: 100%;
+    border: 3px solid yellow;
+}
+
+.carro-venda{
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .grid-container-btn{ 
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        gap:5px;
+    }
+    .divs{
+        margin:5px;
+        padding: 5px ;
+        width: 310px;
+        font-size: 12px;;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) { /*coloquei 500 mesmo sabendo que seria 480*/
+    .grid-container-btn{ 
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        gap:5px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        gap:5px;
+    }
+    .divs{
+        margin:5px;
+        padding: 5px ;
+        width: 240px;
+        font-size: 12px;
+    }
+}
